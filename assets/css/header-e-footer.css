@@ -7,6 +7,9 @@
 }
 
 .menua{
+    position: fixed;
+    background-color: white;
+    z-index: 999;
     justify-content: space-evenly;
     box-sizing: border-box;
     height: 95px;

@@ -14,41 +14,7 @@ body{
     padding: 0;
 }
 
-.menua{
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    height: 95px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 22% 22% 12% 22% 22%;
-    flex-direction: row;
-    align-items: center;
-    .botoes1, .botoes2, .botoes3, .botoes4{
-        flex-direction: row;
-        font-size: 30px;
-        font-weight: 600;
-        color: #000;
-        border-radius: 7px;
-        padding: 10px 30px;
-        text-decoration: none;
-        color: #000;
-        background-color: transparent;
-        transition: 0.2s;
-        justify-content: center;
-        display: block;
-        text-align: center;
-    }
-    .botoes1:hover, .botoes2:hover, .botoes3:hover, .botoes4:hover{
-        text-decoration: underline;
-    }
-    .imagem{
-        text-align: center;
-        img{
-        grid-column: 3;
-        height: 95px;
-        }
-    }
-}
+
 .menu{
     display: flex;
     width: 100%;
