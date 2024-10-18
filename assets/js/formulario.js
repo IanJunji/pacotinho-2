@@ -1,28 +1,43 @@
+function verificar(){
+    console.log("Chamada de verificação");
 
+    var nome = document.getElementById("name").value;
+    var telefone = document.getElementById("tel").value;
+    var email = document.getElementById("e-mail").value;
+    var assuntos = document.querySelector("Assunto").value;
+    var mensagem = document.getElementById("mensagens").value;
 
-function assuntos(){
-    
-    
-
-
-
-    var assuntos = document.querySelector("Assuntos").ariaValueMax
-
-
-    switch (assuntos) {
-    case "Adoção":
-    break;
-    case "Como ajudar?":
-    break;
-    case "Próximos eventos":
-    break;
-    case "Sugestões":
-    break;
-    case "Outros":
-    break;
+    if (nome.length < 2) {
+        alert = ('O nome deve possuir no mínimo 2 caracteres!');
+        return false;
     }
+
+    if (telefone === '') {
+        alert = ('Este campo deve ser preenchido!');
+        return false;
+    }
+
+    if (email === '') {
+        alert = ('Este campo deve ser preenchido!');
+        return false;
+    }
+
+    if (assuntos === '') {
+        alert = ('Selecione um dos assuntos!');
+        return false;
+    }
+
+    if (mensagem === '') {
+        alert('Este campo deve ser preenchido!');
+        return false;
+    }
+
+    alert("Enviado com sucesso!\n" +
+        "\nNome:" + nome +
+        "\nTelefone:" + telefone +
+        "\nEmail:" + email +
+        "\nAssunto" + assuntos +
+        "\nMensagem" + mensagem);
+
 }
 
-function enviar(){
-
-}
