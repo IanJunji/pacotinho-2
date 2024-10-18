@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+}
+h1{
+    font-family: "Playwrite US Modern", cursive;
+}
+
+.text_sobre_o_projeto{
+    background-color: #f0e4cc;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    gap: 80px;
+    .sobre{
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        .intern_sobre{
+            /* Tamanho da box */
+            width: 70%;
+            height: auto;
+            margin: auto;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            /* Fundo */
+            background-color: #f1ebdd;
+            /* Borda */
+            border: solid black 2px;
+            border-radius: 50px;
+            /* Texto */
+            text-align: justify;
+            justify-content: center;
+
+        }
+    }
+    .imagem{
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        width: 30%;
+        height: 100%;
+        img{
+            height: 75%;
+            margin-right: 320px;
+            align-self: center;
+        }
+    }
+
+}
