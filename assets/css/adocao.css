@@ -16,8 +16,16 @@ body{
 
 
 .info{
-    margin-top: 95px;
     background-color: #f0e4cc;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+.container1{
+    margin-top: 95px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-top: solid 2px #603a74 ;
     display: flex;
     .texto_info{
         width: 50%;
