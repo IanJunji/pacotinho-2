@@ -3,47 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo_ong.avif" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo_ong.avif" type="image/x-icon">
     <title>Pacotinho de Amor</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     
     <h2>Preencha o formulário abaixo:</h2>
     
-    <form id="ctt" onsubmit="verificar()">
-        <div class="inputs">   
-            <form>
-                <div class="nome">
-                    <label for="fname">Nome completo: </label><br>
-                    <input type="text" id="fname" name="fname"><br><br>
-                </div>
-                <div class="telefone">
-                    <label for="lname">Telefone: </label><br>
-                    <input type="text" id="lname" name="lname"><br><br>
-                </div>
-                <div class="email"> 
-                    <label for="email">Email: </label><br>
-                    <input type="email" id="email" name="Email"><br><br>
-                </div>
-                <div  class="assuntos">
-                    <label for="assuntos">Assuntos: </label><br>
-                    <select id="Assuntos">
-                        <option value="Adoção">Adoção</option>
-                        <option value="Como ajudar?">Como ajudar?</option>
-                        <option value="Próximos eventos">Próximos eventos</option>
-                        <option value="Sugestões">Sugestões</option>
-                        <option value="Outros">Outros</option>
-                    </select>
-                </div><br>
-                <div class="mensagem">
-                    <label for="mensagem">Mensagem: </label><br>
-                    <textarea id="mensagem" name="mensagem" rows="10" cols="45">
+    <form id="ctt" onsubmit="return verificar()">
+        <div class="inputs">              
+            <div class="nome">
+                <label for="name">Nome completo: </label><br>
+                <input type="text" id="name" name="nome"><br><br>
+            </div>
+            <div class="telefone">
+                <label for="tel">Telefone: </label><br>
+                <input type="text" id="tel" name="telefone"><br><br>
+            </div>
+            <div class="email"> 
+                <label for="e-mail">Email: </label><br>
+                <input type="email" id="e-mail" name="email"><br><br>
+            </div>
+            <div class="assuntos">
+                <label for="assunto">Assuntos: </label><br>
+                <select id="Assunto">
+                    <option value="Adoção">Adoção</option>
+                    <option value="Como ajudar?">Como ajudar?</option>
+                    <option value="Próximos eventos">Próximos eventos</option>
+                    <option value="Sugestões">Sugestões</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div><br>
+            <div class="mensagem">
+                <label for="mensagens">Mensagem: </label><br>
+                <textarea id="mensagens" name="mensagem" rows="11" cols="40">
 
-                    </textarea>
-                </div><br>
-                <button id="btnSend" onclick="enviar()">Enviar</button>
-            </form>
+                </textarea>
+            </div><br>
+                
+            <button id="btnSend" onclick="verificar()">Enviar</button>
         </div>
     </form>
     <script src="formulario.js" defer></script>    
