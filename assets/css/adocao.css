@@ -5,6 +5,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0e4cc;
     
 }
 h1{
@@ -20,17 +21,27 @@ h1{
 }
 
 
+/* ----------------------------------oq seria isso aqui??-------------------------- */
+/* 
 .info{
-    background-color: #f0e4cc;
     padding-top: 100px;
     box-sizing: border-box;
-}
-.container1{
-    margin-top: 95px;
-    width: 100%;
-    height: 400px;
+} */
+/* -------------------------------------------------------------------------------- */
+
+
+.corpo{
+    margin-top: 195px;
+    margin-bottom: 100px;
     background-color: white;
     border-top: solid 2px #603a74 ;
+    border-bottom: solid 2px #603a74 ;
+
+}
+.container1{
+    width: 100%;
+    height: 350px;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -47,22 +58,21 @@ h1{
 
             width: 100%;
             height: 300;
-            padding: 20px;
+            padding: 15px 30px;
             box-sizing: border-box;
-            box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.521);
+            box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.5);
             border-radius: 7px;
 
         
             h1{
-            text-align: start;
-            margin-bottom: 20px;
-            padding-top: 20px;
-
+                text-align: start;
+                padding-bottom: 20px;
             }
 
             p{
             text-align: justify;
             font-size: 20px;
+            padding-bottom: 7px;
             }
         }
     }
@@ -86,14 +96,14 @@ h1{
 
 .container2{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: white;
     border-bottom: solid 2px #603a74;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-  
+
 
     .imagens2{
         width: 60%;
@@ -101,6 +111,7 @@ h1{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
         column-gap: 50px;
 
 
@@ -114,17 +125,12 @@ h1{
     }
 
     .botao_adotei{
-
+        position: relative;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
         width: 30%;
-        height: 350px;
-        margin-top: 50px;
-        margin-left: 80px;
-        padding-bottom: 100px;
-
 
         a{
             display: block;
