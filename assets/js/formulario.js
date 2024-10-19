@@ -1,3 +1,7 @@
+document.getElementById("btnSend").addEventListener("click", function(event) {
+    verificar();
+});
+
 function verificar(){
     console.log("Chamada de verificação");
 
@@ -8,22 +12,22 @@ function verificar(){
     var mensagem = document.getElementById("mensagens").value;
 
     if (nome.length < 2) {
-        alert = ('O nome deve possuir no mínimo 2 caracteres!');
+        alert('O nome deve possuir no mínimo 2 caracteres!');
         return false;
     }
 
     if (telefone === '') {
-        alert = ('Este campo deve ser preenchido!');
+        alert('Este campo deve ser preenchido!');
         return false;
     }
 
     if (email === '') {
-        alert = ('Este campo deve ser preenchido!');
+        alert('Este campo deve ser preenchido!');
         return false;
     }
 
     if (assuntos === '') {
-        alert = ('Selecione um dos assuntos!');
+        alert('Selecione um dos assuntos!');
         return false;
     }
 
@@ -38,6 +42,8 @@ function verificar(){
         "\nEmail:" + email +
         "\nAssunto" + assuntos +
         "\nMensagem" + mensagem);
+    
+    return false;
 
 }
 
