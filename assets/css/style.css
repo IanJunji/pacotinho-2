@@ -60,7 +60,7 @@ body{
     .images{
         position: relative;
         z-index: 2;
-        margin-top: -5px;
+        margin-top: -6px;
         border-top: 5px solid #603a74;
         background-image: url(../images/patinhas.png);
         background-size: cover;
