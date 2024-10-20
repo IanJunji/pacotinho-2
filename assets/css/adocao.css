@@ -5,6 +5,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0e4cc;
     
 }
 h1{
@@ -19,55 +20,28 @@ h1{
     padding: 0;
 }
 
-.menua{
-    justify-content: space-evenly;
+
+/* ----------------------------------oq seria isso aqui??-------------------------- */
+/* 
+.info{
+    padding-top: 100px;
     box-sizing: border-box;
-    height: 95px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 22% 22% 12% 22% 22%;
-    flex-direction: row;
-    align-items: center;
-    .botoes1, .botoes2, .botoes3, .botoes4{
-        flex-direction: row;
-        font-size: 30px;
-        font-weight: 600;
-        color: #000;
-        border-radius: 7px;
-        padding: 10px 30px;
-        text-decoration: none;
-        color: #000;
-        background-color: transparent;
-        transition: 0.2s;
-        justify-content: center;
-        display: block;
-        text-align: center;
-    }
-    .botoes1:hover, .botoes2:hover, .botoes3:hover, .botoes4:hover{
-        text-decoration: underline;
-    }
-    .imagem{
-        text-align: center;
-        .img{
-        grid-column: 3;
-        height: 95px;
-        }
-    }
-}
+} */
+/* -------------------------------------------------------------------------------- */
 
 
 .corpo{
-    width: 100%;
-    height: 1000px;
-    background-color: #f0e4cc;
-    padding-top: 100px;
-    box-sizing: border-box;
+    margin-top: 195px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-top: solid 2px #603a74 ;
+    border-bottom: solid 2px #603a74 ;
+
 }
 .container1{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: white;
-    border-top: solid 2px #603a74 ;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -84,22 +58,21 @@ h1{
 
             width: 100%;
             height: 300;
-            padding: 20px;
+            padding: 15px 30px;
             box-sizing: border-box;
-            box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.521);
+            box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.5);
             border-radius: 7px;
 
         
             h1{
-            text-align: start;
-            margin-bottom: 20px;
-            padding-top: 20px;
-
+                text-align: start;
+                padding-bottom: 20px;
             }
 
             p{
             text-align: justify;
             font-size: 20px;
+            padding-bottom: 7px;
             }
         }
     }
@@ -123,14 +96,14 @@ h1{
 
 .container2{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: white;
     border-bottom: solid 2px #603a74;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-  
+
 
     .imagens2{
         width: 60%;
@@ -138,6 +111,7 @@ h1{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
         column-gap: 50px;
 
 
@@ -151,17 +125,12 @@ h1{
     }
 
     .botao_adotei{
-
+        position: relative;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
         width: 30%;
-        height: 350px;
-        margin-top: 50px;
-        margin-left: 80px;
-        padding-bottom: 100px;
-
 
         a{
             display: block;

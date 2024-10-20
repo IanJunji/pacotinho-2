@@ -5,68 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/logo_ong.avif" type="image/x-icon">
     <title>Pacotinho de Amor</title>
-    <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/header-e-footer.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Pacifico&family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-     <!-- Header -->
-     <header>
+    <header>
         <div class="menua">
             <h2><a href="index.html" class="botoes1">Home</a></h2>
-            <h2><a href="pagina_adocao.html" class="botoes2">Adoções</a></h2>
+            <h2><a href="adocao.html" class="botoes2">Adoções</a></h2>
             <a href="index.html" class="imagem"><img src="../images/logo-home.png" alt="logo da ong"></a>
             <h2><a href="sobre_o_projeto.html" class="botoes3">Sobre o projeto</a></h2>
             <h2><a href="contato.html" class="botoes4">Contato</a></h2>
         </div>
     </header>
-
-
-    <!--Corpo-->
-    <div class="formulario">
+<!--body-->
+    <div class="espaço"></div>
 
     
-        <h2>Entre em contato conosco!</h2>
-        
-        <form id="ctt" onsubmit="verificar()">
-            <div class="inputs">   
-                <form>
-                    <div class="nome">
-                        <label for="fname">Nome completo: </label><br>
-                        <input type="text" id="fname" name="fname"><br><br>
+    
+    <div class="blocopai">
+        <div class="titulo">Entre em contato conosco!</div>
+            
+            <form id="formulario_contato" onsubmit="return verificar(event)">
+                <div class="inputs">              
+                    <div class="etiqueta">
+                        <label for="nome_contato">Nome: </label>
+                        <input class="caixinhas" type="text" id="nome_contato">
+                        <label for="tel">Telefone: </label>
+                        <input class="caixinhas" type="text" id="tel">
+                        <label for="email">E-mail: </label>
+                        <input class="caixinhas" type="email" id="email">
                     </div>
-                    <div class="telefone">
-                        <label for="lname">Telefone: </label><br>
-                        <input type="text" id="lname" name="lname"><br><br>
-                    </div>
-                    <div class="email"> 
-                        <label for="email">Email: </label><br>
-                        <input type="email" id="email" name="Email"><br><br>
-                    </div>
-                    <div  class="assuntos">
-                        <h2>Assunto:</h2>
-                        <select id="Assuntos">
-                            <option value="Adoção">Adoção</option>
-                            <option value="Como ajudar?">Como ajudar?</option>
-                            <option value="Próximos eventos">Próximos eventos</option>
-                            <option value="Sugestões">Sugestões</option>
-                            <option value="Outros">Outros</option>
+                    <div class="flex2">
+                        <label class="etiqueta" for="assunto">Assuntos: </label>
+                        <select class="menudropdown" id="assunto">
+                            <option value="" disabled selected>Selecione um assunto...</option>
+                            <option value="adocao">Adoção</option>
+                            <option value="comoa_judar">Como ajudar?</option>
+                            <option value="proximos_eventos">Próximos eventos</option>
+                            <option value="sugestoes">Sugestões</option>
+                            <option value="outros">Outros</option>
                         </select>
-                    </div><br>
+                    </div>
                     <div class="mensagem">
-                     
-                        <textarea id="mensagem" name="mensagem" rows="10" cols="45">
-
-                        </textarea>
-                    </div><br>
-                    <button id="btnSend" onclick="enviar()">Enviar</button>
-                </form>
-            </div>
-        </form>
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem: "></textarea>
+                    </div>
+                        
+                    <button class="flexbutao" id="btnSend">Enviar</button>
+                </div>
     </div>
-    <!-- Footer -->
+    </form>
+
+    <!--footer-->
     <div class="rodape">
         <div class="link1">
-            <p><a href="pagina_adocao.html">ADOTE</a></p>
+            <p><a href="adocao.html">ADOTE</a></p>
             <p>Adote um companheiro pra vida.</p>
         </div>
         <div class="link2">
@@ -74,7 +70,7 @@
             <p>Doe qualquer valor.</p>
         </div>
         <div class="link3">
-            <p><a href="contato_e_links.html">CONTATO</a></p>
+            <p><a href="contato.html">CONTATO</a></p>
             <p>Tire suas dúvidas.</p>
         </div>
 
@@ -91,6 +87,6 @@
         <div class="ong">
             <h3>PACOTINHO DE AMOR</h3>
         </div>
-    <script src="formulario.js" defer></script>    
+    <script src="/assets/js/contato.js" defer></script>    
 </body>
 </html>
