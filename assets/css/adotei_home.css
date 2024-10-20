@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.espaco{
+    height: 95px;
+}
+
+.espaco2{
+    height: 200px;
+}
+
+body{
+    background-color: #f0e4cc;
+}
+
+.titulo h1{
+    text-align: center;
+    font-family: "Playwrite US Modern", cursive;
+    color: #794a92;
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+    margin-top: 30px;
+}
+.opcoes #imagem{
+    height: 10px;
+    padding-left: 30px;
+}
+.opcoes{
+    position: absolute;
+    right: 50%;
+    top: 15%;
+    transform: translate(50%);
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.opcoes .texto_opcoes li{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: solid 1px black;
+    border-radius: 30px;
+    p{
+        opacity: 50%;
+    }
+}
+.opcoes .opcoes_texto li{
+    border: none;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.opcoes ul {
+
+    cursor: default;
+    list-style-type: none;
+}
+.opcoes ul ul li{
+    cursor: pointer;
+    display: none;
+}
+.opcoes ul li:hover ul li{
+    display: flex;
+}
+.opcoes ul li:hover #imagem{
+    transform: rotate(180deg);
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.texto_cuidados, .texto_alimentacao, .texto_adaptacao{
+    display: none;
+}
+
+
+
+.texto{
+
+}
