@@ -8,7 +8,7 @@ function verificar(){
     var nome = document.getElementById("name").value;
     var telefone = document.getElementById("tel").value;
     var email = document.getElementById("e-mail").value;
-    var assuntos = document.querySelector("Assunto").value;
+    var assuntos = document.querySelector("assunto").value;
     var mensagem = document.getElementById("mensagens").value;
 
     if (nome.length < 2) {
