@@ -91,6 +91,10 @@ body{
     padding-right: 30px;
     padding-left: 0;
 }
+.opcoes ul ul li:hover{
+    transition: .2s;
+    background-color: #ccc;
+}
 
 
 
