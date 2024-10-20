@@ -1,49 +1,26 @@
-document.getElementById("btnSend").addEventListener("click", function(event) {
-    verificar();
-});
+function verificar(event){
+    event.preventDefault();
 
-function verificar(){
-    console.log("Chamada de verificação");
+    var input_nome = document.querySelector("#nome_contato").value
+    var input_telefone = document.querySelector("#tel").value
+    var input_email = document.querySelector("#email").value
+    var input_textarea = document.querySelector("#mensagem").value
 
-    var nome = document.getElementById("name").value;
-    var telefone = document.getElementById("tel").value;
-    var email = document.getElementById("e-mail").value;
-    var assuntos = document.querySelector("assunto").value;
-    var mensagem = document.getElementById("mensagens").value;
-
-    if (nome.length < 2) {
-        alert('O nome deve possuir no mínimo 2 caracteres!');
-        return false;
+    if(input_nome.length < 2){
+        alert('Seu nome deve conter no mínimo três letras!')
+        return;
     }
-
-    if (telefone === '') {
-        alert('Este campo deve ser preenchido!');
-        return false;
+    if(input_telefone === "" || input_email === "" || input_textarea === ""){
+        alert("Nenhum campo pode ficar vazio!")
+        return;
     }
-
-    if (email === '') {
-        alert('Este campo deve ser preenchido!');
-        return false;
+    else{
+        alert(`Formulário preenchido com sucesso!
+            Nome: ${input_nome}
+            Telefone: ${input_telefone}
+            E-mail: ${input_email}
+            Mensagem: ${input_textarea}`)
+        location.reload()
     }
-
-    if (assuntos === '') {
-        alert('Selecione um dos assuntos!');
-        return false;
-    }
-
-    if (mensagem === '') {
-        alert('Este campo deve ser preenchido!');
-        return false;
-    }
-
-    alert("Enviado com sucesso!\n" +
-        "\nNome:" + nome +
-        "\nTelefone:" + telefone +
-        "\nEmail:" + email +
-        "\nAssunto" + assuntos +
-        "\nMensagem" + mensagem);
-    
-    return false;
 
 }
-

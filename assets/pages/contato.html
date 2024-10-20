@@ -29,19 +29,15 @@
     <div class="blocopai">
         <div class="titulo">Entre em contato conosco!</div>
             
-            <form id="ctt" onsubmit="return verificar()">
+            <form id="formulario_contato" onsubmit="return verificar(event)">
                 <div class="inputs">              
                     <div class="etiqueta">
-                        <label for="name">Nome: </label><br>
-                        <input class="caixinhas" type="text" id="name" name="nome"><br><br>
-                    </div>
-                    <div class="etiqueta">
-                        <label for="tel">Telefone: </label><br>
-                        <input class="caixinhas" type="text" id="tel" name="telefone"><br><br>
-                    </div>
-                    <div class="etiqueta"> 
-                        <label for="e-mail">E-mail: </label><br>
-                        <input class="caixinhas" type="email" id="e-mail" name="email"><br><br>
+                        <label for="nome_contato">Nome: </label>
+                        <input class="caixinhas" type="text" id="nome_contato">
+                        <label for="tel">Telefone: </label>
+                        <input class="caixinhas" type="text" id="tel">
+                        <label for="email">E-mail: </label>
+                        <input class="caixinhas" type="email" id="email">
                     </div>
                     <div class="flex2">
                         <label class="etiqueta" for="assunto">Assuntos: </label>
@@ -54,12 +50,11 @@
                             <option value="outros">Outros</option>
                         </select>
                     </div>
-                        <br>
                     <div class="mensagem">
-                        <textarea id="mensagens" name="mensagem" placeholder="Mensagem: "></textarea>
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem: "></textarea>
                     </div>
                         
-                    <button class="flex3" id="btnSend">Enviar</button>
+                    <button class="flexbutao" id="btnSend">Enviar</button>
                 </div>
     </div>
     </form>
@@ -92,6 +87,6 @@
         <div class="ong">
             <h3>PACOTINHO DE AMOR</h3>
         </div>
-    <script src="contato.js" defer></script>    
+    <script src="/assets/js/contato.js" defer></script>    
 </body>
 </html>
