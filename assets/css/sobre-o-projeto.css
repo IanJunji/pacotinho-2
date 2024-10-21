@@ -24,7 +24,7 @@ h1{
     width: 100%;
     height: 400px;
     gap: 80px;
-    margin-top: 95px;
+    margin-top: 155px;
     margin-bottom: 50px;
     /* TEXTO SOBRE O PROJETO */
     .sobre{
@@ -63,5 +63,69 @@ h1{
 /* TEXTO DE DOAÇÕES E VOLUNTARIOS */
 
 .doacoes-e-volunt{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 0px 130px;
+    height: 300px;
+    background-color: white;
+    border-bottom: #603a74 solid 3px;
+}
+.doacoes-e-volunt .doacoes{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.doacoes-e-volunt .doacoes p{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    word-spacing: 3px;
+}
+.doacoes-e-volunt .doacoes ul{
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    word-spacing: 3px;
+}
+.doacoes-e-volunt .sorriso{
+    width: 30%;
+}
+.doacoes-e-volunt .sorriso img{
+    height: 100%;
+}
 
+.doacoes-e-volunt .volunt{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.doacoes-e-volunt .volunt p{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    word-spacing: 3px;
+
+}
+.doacoes-e-volunt .volunt button{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    word-spacing: 3px;
+    border: none;
+    background-color: #603a74;
+    margin-top: 30px;
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+}
+.doacoes-e-volunt .volunt button a{
+    text-decoration: none;
+    color: white;
 }
