@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.espaco{
+    height: 95px;
+}
+.espaco2{
+    height: 200px;
+}
+
+
+
+
+body{
+    background-color: #f0e4cc;
+}
+
+/* -------------- TITULO -------------- */
+.titulo h1{
+    text-align: center;
+    font-family: "Playwrite US Modern", cursive;
+    color: #794a92;
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+/* -------------- SETA DAS OPCOES -------------- */
+.opcoes #imagem{
+    height: 10px;
+    padding-left: 30px;
+}
+
+/* -------------- MENU DROPDOWN -------------- */
+.opcoes{
+    font-family: "Playwrite US Modern", cursive;
+    position: absolute;
+    right: 50%;
+    top: 15%;
+    transform: translate(50%);
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.opcoes .texto_opcoes li{
+    background-color: white;
+    box-sizing: border-box;
+    min-width: 300px;
+    padding: 10px 20px;
+    border: solid 1px black;
+    border-radius: 30px;
+    p{
+        font-size: 20px;
+        opacity: 50%;
+    }
+}
+.menu{
+    display: inline-block;
+    min-width: 300px;
+    text-align: center;
+}
+.opcoes ul {
+    cursor: default;
+    list-style-type: none;
+}
+
+/* -------------- OPCOES ESCONDIDAS DO DROPDOWN -------------- */
+.opcoes .opcoes_texto li{
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.opcoes ul ul li{
+    cursor: pointer;
+    display: none;
+}
+
+/* -------------- HOVER DAS OPCOES ESCONDIDAS -------------- */
+.opcoes ul li:hover ul li{
+    display: flex;
+}
+.opcoes ul li:hover #imagem{
+    transform: rotate(180deg);
+    padding-right: 30px;
+    padding-left: 0;
+}
+.opcoes ul ul li:hover{
+    transition: .2s;
+    background-color: #ccc;
+}
+
+
+
+/* -------------- PAGINA INICIAL DE ADOTEI -------------- */
+.texto_menu {
+    display: flex;
+    box-sizing: border-box;
+    background-color: white;
+    border-top: solid #794a92 5px;
+    border-bottom: solid #794a92 5px;
+    margin: 50px 0 200px 0;
+    padding: 30px;
+    justify-content: center;
+        
+}
+.texto_menu #text1{
+    width: 700px;
+    font-size: 24px;
+}
+
+
+/*-------------- CUIDADOS BASICOS --------------*/
+.texto_cuidados{
+    background-color: white;
+    height: 350px;
+    margin-bottom: 200px;
+    border-top:solid #794a92 3px;
+    border-bottom:solid #794a92 3px;
+    padding: 30px 350px;
+    justify-content: space-around;
+}
+.texto_cuidados img{
+    height: 80%;
+    align-self: center;
+}
+.texto_cuidados p{
+    text-align: justify;
+    align-self: center;
+    width: 700px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    word-spacing: 2px;
+    line-height: 28px;
+    
+}
+
+/* -------------- ALIMENTAÇÃO -------------- */
+.texto_alimentacao{
+    background-color: white;
+    height: 400px;
+    margin-bottom: 200px;
+    border-top:solid #794a92 3px;
+    border-bottom:solid #794a92 3px;
+    padding: 30px 250px;
+    justify-content: space-around;
+}
+.texto_alimentacao img{
+    height: 85%;
+    align-self: center;
+    
+}
+.texto_alimentacao p{
+    align-self: center;
+    text-align: justify;
+    width: 800px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    word-spacing: 2px;
+    line-height: 28px;
+
+}
+
+/*-------------- ADAPTAÇÃO --------------*/
+.texto_adaptacao{
+    box-sizing: border-box;
+    flex-direction: column;
+    height: auto;
+    
+}
+.texto_adaptacao img{
+    width: 100%;
+    
+}
+.texto_adaptacao .adapt_dentro{
+    height: 300px;
+    align-content: center;
+    text-align: justify;
+    padding: 0px 350px 30px;
+    background-color: white;
+    border-top: solid 3px #794a92;
+    border-bottom: solid 3px #794a92;
+    p{
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: .4px;
+        word-spacing: 2px;
+        line-height: 28px;
+    }
+}
+
+
+
+
+
+
+.texto_cuidados, .texto_alimentacao, .texto_adaptacao{
+    display: none;
+}

@@ -10,6 +10,79 @@ body{
 
 .nav{
     display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+    margin-top: 95px;
+    z-index: 1;
+}
+.menu img{
+    width: 100%;
+    filter: blur(2px);
+    height: auto;
+
+}
+.menup{ 
+    position: absolute;
+    width: 278px;
+    height: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 130px;
+    
+    font-family: 'Playwrite US Modern';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 36px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    -webkit-text-stroke: #f0e4cc 0.7px;
+    color: #603A74;
+    
+}
+
+.menu_frase{
+    margin: 26% auto;
+    color: #ffffff;
+        font-size: 10px;
+        font-weight: 900;
+    }
+
+
+
+
+    .images{
+        position: relative;
+        z-index: 2;
+        margin-top: -6px;
+        border-top: 5px solid #603a74;
+        background-image: url(../images/patinhas.png);
+        background-size: cover;
+        background-repeat: repeat;
+
+        width: 100%;
+        height: 550px;
+        text-align: center;
+        justify-content: center;
+        background-color: #f0e4cc;
+        img{
+            height: 350px;
+            margin: 100px 50px;
+        }
+
+    }
+
+.titles2{
+    display: flex;
+    flex-direction: row;
     box-sizing: border-box;
     align-items: center;
     height: 95px;
